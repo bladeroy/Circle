@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Products</title>
+    
+    <script src="App.js"></script>
+    <!--Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/83039ae874.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--styles--CSS-->
+    <link rel="stylesheet" href="styles.css" />
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- Heading-->
+    <h1 style="font-size: 45px;"><center>My Products</center></h1>
+    <p style="padding: 10px 0 10px 0;"><center>
+      These Products are the products you already have at home.
+    </p></center>
+
+    <!-- First Card-->
+
+    <div class="container2">
+    <div class="card">
+      <div class="row">
+        <div class="column">
+          <img  src="./images/chickpeas.png" alt="Chickpeas" />
+        </div>
+        <div class="column">
+          <div class="row">
+            <h3 class="heading-pdt">Chickpeas</h3>
+          </div>
+          <!--Product details-->
+          <div class="row">
+            <div class="column">
+              <p style="font-weight: bold;">1Kg</p>
+            </div>
+            <div class="column col2">
+              <p style="font-size: 12px;">Price</p>
+              <p style="font-weight: bold;">5,39€</p>
+            </div>
+          </div>
+          <div class="row">
+            <button id="1"  class="btn1-pdts" onclick="changerfl1Color()">Refill</button>
+          </div>
+
+          <div class="row">
+            <center class="refund-link">
+             <a id="r1"onclick="changerefd1txt()" >or refund</a>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Second Card-->
+  <div class="container2">
+    <div class="card">
+      <div class="row">
+        <div class="column">
+          <img src="./images/musli.png" alt="Musli" />
+        </div>
+        <div class="column">
+          <div class="row">
+            <h3 class="heading-pdt" >Musli</h3>
+          </div>
+          <!--Product details-->
+          <div class="row">
+            <div class="column">
+              <p style="font-weight: bold;">500g</p>
+            </div>
+            <div class="column col2">
+              <p style="font-size: 12px;">Price</p>
+              <p style="font-weight: bold;">3,19€</p>
+            </div>
+          </div>
+          <div class="row">
+            <button id="2"  class="btn1-pdts" onclick="changerfl2Color()">Refill</button>
+          </div>
+
+          <div class="row">
+            <center class="refund-link">
+               <a id="r2"onclick="changerefd2txt()">or refund</a>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Third Card-->
+    <div class="container2">
+    <div class="card">
+      <div class="row">
+        <div class="column">
+          <img src="./images/nutmix.png" alt="nutmix" />
+        </div>
+        <div class="column">
+          <div class="row">
+            <h3 class="heading-pdt">Nutmix</h3>
+          </div>
+          <!--Product details-->
+          <div class="row">
+            <div class="column">
+              <p style="font-weight: bold;">250g</p>
+            </div>
+            <div class="column col2">
+              <p style="font-size: 12px;">Price</p>
+              <p style="font-weight: bold;">5,49€</p>
+            </div>
+          </div>
+          <div class="row">
+            <button id="3"  class="btn1-pdts" onclick="changerfl3Color()" >Refill</button>
+          </div>
+
+          <div class="row">
+            <center class="refund-link">
+               <a id="r3" onclick="changerefd3txt()">or refund</a>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <button id="btnconfirm" type="button" class="button-confirm" onclick="changecfrmColor()">Confirm</button>
+
+
+  </body>
+</html>

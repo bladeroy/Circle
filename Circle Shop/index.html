@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Circle Store</title>
+
+    <!--Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/83039ae874.js"
+      crossorigin="anonymous"
+    ></script>
+
+    
+   
+
+    <!--styles--CSS-->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <!-- PWA-->
+  <body class="fullscreen">
+    <!--login form-->
+    <div class="login-page">
+      
+      
+      <div class="form">   
+        <img class="logo" src="Circlelogo.png" alt="logo" height="160px" width="150px" />
+        <div>
+          <h1 class="heading">CIRCLE</h3>
+        </div>
+        <div id="login_div" class="main_div">
+          <input id="email" type="email" placeholder="email" />
+          <input id="password" type="password" placeholder="password" />
+          <p class="message">
+            Forgot your password?<a href="password.html"> Change it here</a>
+          </p>
+          <button onclick="login()">Login</button>
+        <div id="user_div" class="loggedin_div">
+        	<h3>Welcome User</h3>
+        	<p id="user_pr">Welcome to Firebse login</p>
+        	<button onclick="logout()">LogOut</button>
+
+        </div>
+        </div>       
+        
+      </div>
+    </div>
+     <script src="App.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-app.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-auth.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-database.js"></script>
+
+
+     <script>
+     	var firebaseConfig = {
+
+		    apiKey: "AIzaSyCcCip0gnwgR9B4_w-iPXeu7qB64EEGou8",
+		    authDomain: "xplore-267213.firebaseapp.com",
+		    databaseURL: "https://xplore-267213.firebaseio.com",
+		    projectId: "xplore-267213",
+		    storageBucket: "xplore-267213.appspot.com",
+		    messagingSenderId: "1052171307474",
+		    appId: "1:1052171307474:web:b7ed5168059eadd388600b"
+           };
+           // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+     </script>
+     <script src="index.js"></script>
+   </body>
+</html>

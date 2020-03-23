@@ -1,0 +1,406 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+
+:root {
+  --primaryColor: #f0f3f5;
+  --mainWhite: #ffffff;
+  --mainBlack: #000000;
+  --mainGrey: #ececec;
+  --mainSpacing: 0.1rem;
+  --underlinecolor: #205284;
+  --selectionColor: #212c4f;
+  --mainTransition: all 0.3s linear;
+}
+/*Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Make content area fill the entire browser window */
+html,
+.fullscreen {
+  display: flex;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+body {
+  background-color: var(--primaryColor);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  margin: 10px auto 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+/*login page */
+
+.container {
+  font-size: 30px;
+  padding-bottom: inherit;
+}
+
+/* Login page */
+
+.logo {
+  padding-bottom: 10px;
+}
+.heading {
+  padding-bottom: 30px;
+  font-size: 45px;
+  font-weight: bold;
+}
+.login-page {
+  width: 360px;
+  padding: 10% 0 0;
+  margin: auto;
+}
+
+.form {
+  position: relative;
+  z-index: 1;
+  background: var(--primaryColor);
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.form input {
+  outline: 1;
+  background: var(--primaryColor);
+  width: 100%;
+  border: 1;
+  border-color: var(--underlinecolor);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin: 0 0px 5px;
+  padding: 8px;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.form button {
+  text-transform: none;
+  outline: 0;
+  background: var(--mainWhite);
+  width: 100%;
+  border: 0;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  border-color: black;
+  margin-top: 12px;
+  padding: 15px;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: var(--selectionColor);
+  color: var(--mainWhite);
+}
+
+.form .message {
+  margin: 0px 0 20px 0;
+  color: var(--mainBlack);
+  font-size: 12px;
+  font-weight: normal;
+  text-align: left;
+}
+
+.form .message a {
+  color: var(--mainBlack);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/*Password Page*/
+
+.password-page {
+  width: 360px;
+  padding: 10% 0 0;
+  margin: auto;
+}
+
+.passwordform {
+  position: relative;
+  z-index: 1;
+  background: var(--primaryColor);
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.container1 {
+  font-size: 30px;
+  padding-bottom: inherit;
+}
+
+.passwordform input {
+  outline: 0;
+  color: rgba(0, 0, 0, 0.4);
+  background: var(--primaryColor);
+  width: 100%;
+  border: 1;
+  border-color: var(--underlinecolor);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin: 0 0 15px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.passwordform button {
+  text-transform: none;
+  outline: 0;
+  background: var(--mainWhite);
+  width: 100%;
+  border: 0;
+  border-radius: 10px;
+  border-color: var(--mainBlack);
+  margin-top: 10px;
+  padding: 15px;
+  color: var(--mainBlack);
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
+}
+
+.passwordform button:hover {
+  background-color: var(--selectionColor);
+  color: var(--mainWhite);
+}
+
+/* The Modal (background) */
+
+.screen {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  transition-delay: 60000ms;
+}
+
+/* Modal Content */
+.screen_content {
+  background-color: var(--primaryColor);
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 280px;
+  height: 480px;
+}
+
+/* The Close Button */
+.closeBtn {
+  color: var(--mainBlack);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  display: block;
+  cursor: pointer;
+}
+
+.closeBtn :hover,
+.closeBtn :focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.icon-size {
+  font-size: 80px;
+  padding: 80px 30px 60px 30px;
+}
+
+/* Products Page*/
+
+.container2 {
+  padding: 15px 5px 30px 5px;
+}
+.card {
+  border-radius: 10px;
+  background-color: var(--mainWhite);
+  transition: 0.3s;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.15);
+  padding: 15px;
+  margin: auto;
+  width: 400px;
+}
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 15px 10px 5px 0px;
+  background-color: var(--mainWhite);
+  justify-items: space-evenly;
+}
+
+.col1 {
+  font-size: 12px;
+}
+
+.col2 {
+  padding: 0;
+}
+.row {
+  background-color: var(--mainWhite);
+  margin: 0 -5px;
+  justify-items: space-evenly;
+  padding: 15px 20px 5px 10px;
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+  background-color: var(--mainWhite);
+}
+
+.heading-pdt {
+  text-align: left;
+  padding-left: 0;
+  color: #212c4f;
+}
+.btn1-pdts {
+  text-transform: none;
+  outline: 0;
+  background: #212c4f;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  color: var(--mainWhite);
+  font-size: 15px;
+  font-weight: 500;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.refund-link {
+  font-size: 16px;
+  font-weight: bold;
+}
+.refund-link a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button-confirm {
+  text-transform: none;
+  outline: 0;
+  background: var(--mainWhite);
+  width: 100%;
+  border: 0;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  border-color: black;
+  margin-top: 12px;
+  padding: 15px;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button-confirm:hover {
+  background-color: var(--selectionColor);
+  color: var(--mainWhite);
+}
+
+/*Address Page*/
+
+.address-page {
+  width: 360px;
+  padding: 10% 0 0;
+  margin: auto;
+}
+
+.addressform {
+  position: relative;
+  z-index: 1;
+  background: var(--primaryColor);
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.container3 {
+  padding: 0px 5px 20px 5px;
+  font-size: 25px;
+  font-weight: bold;
+}
+.container4 {
+  padding: 0px 5px 20px 5px;
+  font-size: 16px;
+}
+.addressform input {
+  outline: 0;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.5);
+  background: var(--primaryColor);
+  width: 100%;
+  border: 1;
+  border-color: var(--underlinecolor);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin: 0 0 5px;
+  padding: 25px 10px 5px 10px;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.addressform button {
+  text-transform: none;
+  outline: 0;
+  background: var(--mainWhite);
+  width: 100%;
+  border: 0;
+  border-radius: 10px;
+  border-color: var(--mainBlack);
+  margin-top: 10px;
+  padding: 15px;
+  color: var(--mainBlack);
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
+}
+
+.addressform button:hover {
+  background-color: var(--selectionColor);
+  color: var(--mainWhite);
+}
+
+.addrstext {
+  text-align: left;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.4);
+  padding: 0px 10px 10px 10px;
+}
